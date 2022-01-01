@@ -1,14 +1,9 @@
 import styled from "styled-components"
 
-export default function AboutUs() {
-
-
-
-
+export default function Documents() {
     return (
       <Wrapper>
-        SOBRE
-
+            DOCUMENTOS
       </Wrapper>
     );
 }

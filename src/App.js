@@ -5,6 +5,8 @@ import Header from "./components/Header.js"
 import AboutUs from "./pages/AboutUs"
 import Landing from "./pages/Landing"
 import Contact from "./pages/Contact"
+import PickUp from "./pages/PickUp"
+import Documents from "./pages/Documents"
 
 export default function App(){
 
@@ -14,8 +16,10 @@ export default function App(){
             <Header/>
             <Routes>
                 <Route exact path='/' element={<Landing />} />
-                <Route exact path='/about' element={<AboutUs />} />
-                <Route exact path='/contact' element={<Contact />} />
+                <Route exact path='/sobre' element={<AboutUs />} />
+                <Route exact path='/coletas' element={<PickUp />} />
+                <Route exact path='/documentos' element={<Documents />} />
+                <Route exact path='/contato' element={<Contact />} />
             </Routes>
         </Router>
     )

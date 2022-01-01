@@ -1,14 +1,9 @@
 import styled from "styled-components"
 
-export default function AboutUs() {
-
-
-
-
+export default function PickUp() {
     return (
       <Wrapper>
-        SOBRE
-
+            COLETA
       </Wrapper>
     );
 }
