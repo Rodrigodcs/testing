@@ -25,7 +25,7 @@ export default function Header() {
             <Menu>
                 <MenuOptions>
                     <Option selected={page[0]} onClick={() => relocate(`/`)}>
-                        Inicio
+                        Início
                     </Option>
                     <Option selected={page[1]} onClick={() => relocate(`/sobre`)}>
                         Quem Somos
@@ -57,9 +57,9 @@ export const Wrapper = styled.section`
     top: 0;
     left:0;
     width:100%;
-    height: 70px;
+    height: 60px;
     padding:0 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 8px #8D8D8D;
     background: #F7F8FC;
     .button{
         background-color:#B63232;
@@ -68,8 +68,8 @@ export const Wrapper = styled.section`
         margin-right: -20px;
         border-radius: 0;
         height: 100%;
-        width: 150px;
-        font-size: 20px;
+        width: 120px;
+        font-size: 15px;
     }
     .button:hover{
         color:white;
@@ -83,7 +83,7 @@ export const Logo = styled.h1`
     font-size: 50px;
     img{
         width:220px;
-        height:90px;
+        height:80px;
         margin-top: 15px;
     }
 `;
@@ -105,7 +105,7 @@ export const MenuOptions = styled.div`
 
 export const Option = styled.p`
     color: ${({selected}) => selected ? `Black` : `#8D8D8D`};
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     :hover{
         color: black;
