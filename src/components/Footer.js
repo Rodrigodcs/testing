@@ -15,6 +15,10 @@ export default function Footer() {
                 <div className="first">
                     <p className="title">Sobre a TransMas</p>
                     <p className="content">A Transmas Encomendas e Transportes presta serviços de transporte rodoviário de cargas com ênfase na prestação de transporte de carga fechada com excelência e pontualidade nas entregas e coletas.</p>
+                    <p className="content">Atua em toda a Região Norte e Litoral Norte de Santa Catarina e Região Sul do Paraná. Realiza também o transporte de cargas para os Estados de São Paulo e Rio Grande do Sul, e para todo o restante do Estado de Santa Catarina.</p>
+                </div>
+                <div className="divider">
+                    
                 </div>
                 <div>
                     <p className="title">Mapa do Site</p>
@@ -35,7 +39,7 @@ export default function Footer() {
                
         </Wrapper>
         <Base>
-            @ 2004-2022 • TransMas
+            @ 2002-2022 • TransMas
         </Base>
         </>
     );
@@ -46,7 +50,7 @@ export const Wrapper = styled.section`
     flex-direction: column;
     align-items:center;
     width:100%;
-    padding: 20px 200px 5px 200px;
+    padding: 20px 100px 5px 100px;
     background: #F7F8FC;
 `;
 export const Begin = styled.div`
@@ -82,11 +86,11 @@ export const Logo = styled.div`
 export const Container = styled.div`
     display: flex;
     width:100%;
-    height: 250px;
+    
     background: #F7F8FC;
     div{
         height: 100%;
-        width:27%;
+        width:25%;
         padding:25px 0;
         padding-right: 25px;
         background: #F7F8FC;
@@ -101,9 +105,11 @@ export const Container = styled.div`
         }
         
     }
-    .first{
-            width:46%;
-            padding-right:50px;
+    .divider{
+            width:10%;
+        }
+        .first{
+            width:40%;
         }
 `;
 export const Base = styled.div`
