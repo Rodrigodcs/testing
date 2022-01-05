@@ -7,6 +7,7 @@ import Landing from "./pages/Landing"
 import Contact from "./pages/Contact"
 import PickUp from "./pages/PickUp"
 import Documents from "./pages/Documents"
+import Track from "./pages/Track"
 
 export default function App(){
 
@@ -20,6 +21,7 @@ export default function App(){
                 <Route exact path='/coletas' element={<PickUp />} />
                 <Route exact path='/documentos' element={<Documents />} />
                 <Route exact path='/contato' element={<Contact />} />
+                <Route exact path='/rastrear' element={<Track />} />
             </Routes>
         </Router>
     )

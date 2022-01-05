@@ -13,7 +13,7 @@ export default function Footer() {
             </Begin>
             <Container>
                 <div className="first">
-                    <p className="title">Sobre a TransMas</p>
+                    <p className="title">Sobre</p>
                     <p className="content">A Transmas Encomendas e Transportes presta serviços de transporte rodoviário de cargas com ênfase na prestação de transporte de carga fechada com excelência e pontualidade nas entregas e coletas.</p>
                     <p className="content">Atua em toda a Região Norte e Litoral Norte de Santa Catarina e Região Sul do Paraná. Realiza também o transporte de cargas para os Estados de São Paulo e Rio Grande do Sul, e para todo o restante do Estado de Santa Catarina.</p>
                 </div>
@@ -90,7 +90,7 @@ export const Container = styled.div`
     background: #F7F8FC;
     div{
         height: 100%;
-        width:25%;
+        width:28%;
         padding:25px 0;
         padding-right: 25px;
         background: #F7F8FC;
@@ -109,7 +109,7 @@ export const Container = styled.div`
             width:10%;
         }
         .first{
-            width:40%;
+            width:35%;
         }
 `;
 export const Base = styled.div`

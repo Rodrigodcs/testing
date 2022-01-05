@@ -6,7 +6,7 @@ export default function Landing() {
     const style = {
         width: "30px",
         height: "30px",
-        color: "#483D41"
+        color: "#B63232"
     }
     return (
         <Wrapper>
@@ -20,20 +20,18 @@ export default function Landing() {
                     <div className="floatings">
                         <div className="floating1 floating">
                             <div className="inside-text">
-                                <p className="title">Consultar</p>
+                                <p className="title">Link 1</p>
                                 <p>
-                                    Agilidade e rapidez com segurançasad asdasd asdas asd asd asd as  sdaasdasdasd asdasdasd sad asdsadasdas dsaa
+                                    Aaaaaaa aaaaa aa aaaaaa aaaaaa aaa aaaaaa a aaaaa aa aaaaaa a aaa aaaaaa a aaa aa aaaaaa aaaa aaa aaaaa a
                                 </p>
                             </div>
                             <BsFillArrowUpRightSquareFill style={style}/>
-                            
-                        
                         </div>
                         <div className="floating2 floating">
                             <div className="inside-text">
-                                <p className="title">Consultar</p>
+                                <p className="title">Link 2</p>
                                 <p>
-                                    Agilidade e rapidez com segurançasad asdasd asdas asd asd asd as asdsadasdas dsaa
+                                    Aaaaaaa aaaaa aa aaaaaa aaaaaa aaa aaaaaa a aaaaa aa aaaaaa a aaaa aaaaa aaaaaa aaaaa
                                 </p>
                             </div>
                             <BsFillArrowUpRightSquareFill style={style}/>
@@ -67,7 +65,7 @@ export const Wrapper = styled.section`
         }
         .title p{
             font-size:50px;
-            color: #483D41;
+            color: #B63232;
         }
         .half{
             display:flex;
@@ -124,6 +122,5 @@ export const Wrapper = styled.section`
                 }
             }
         }
-        
     }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
+import logo from "../assets/LOGOhd.png"
 
 
 export default function Header() {
@@ -9,18 +10,19 @@ export default function Header() {
     const navigate = useNavigate()
 
     function relocate(location){
-        if(location === "/") setPage([1,0,0,0,0])
-        if(location === "/sobre") setPage([0,1,0,0,0])
-        if(location === "/coletas") setPage([0,0,1,0,0])
-        if(location === "/documentos") setPage([0,0,0,1,0])
-        if(location === "/contato") setPage([0,0,0,0,1])
+        if(location === "/") setPage([1,0,0,0,0,0])
+        if(location === "/sobre") setPage([0,1,0,0,0,0])
+        if(location === "/coletas") setPage([0,0,1,0,0,0])
+        if(location === "/documentos") setPage([0,0,0,1,0,0])
+        if(location === "/contato") setPage([0,0,0,0,1,0])
+        if(location === "/rastrear") setPage([0,0,0,0,0,1])
         navigate(location)
     }
     console.log(page)
     return (
       <Wrapper>
             <Logo>
-                <img src='https://i.ibb.co/h2SH8Mm/logop.png' alt="logo"></img>
+                <img onClick={() => relocate(`/`)} src={logo} alt="logo"></img>
             </Logo>
             <Menu>
                 <MenuOptions>
@@ -40,7 +42,7 @@ export default function Header() {
                         Contato
                     </Option>
                 </MenuOptions>
-                <Button className="button" variant="contained">
+                <Button onClick={() => relocate(`/rastrear`)} className="button" variant="contained">
                     Rastrear
                 </Button>
             </Menu>
@@ -57,7 +59,7 @@ export const Wrapper = styled.section`
     top: 0;
     left:0;
     width:100%;
-    height: 60px;
+    height: 70px;
     padding:0 20px;
     box-shadow: 0 0 8px #8D8D8D;
     background: #F7F8FC;
@@ -70,8 +72,10 @@ export const Wrapper = styled.section`
         height: 100%;
         width: 120px;
         font-size: 15px;
+        transition: 0.3s;
     }
     .button:hover{
+        background-color:#A41003;
         color:white;
         box-shadow: none;
         border-radius: 0;
@@ -82,9 +86,12 @@ export const Logo = styled.h1`
     color: white;
     font-size: 50px;
     img{
-        width:220px;
-        height:80px;
+        
+        margin-left: -20px;
+        width:250px;
+        height:100px;
         margin-top: 15px;
+        cursor: pointer;
     }
 `;
 
