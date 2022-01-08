@@ -4,48 +4,56 @@ import styled from "styled-components"
 export default function Footer() {
     
     return (
-        <><Wrapper>
-            <Begin>
-                <Logo>
-                    <img src='https://i.ibb.co/h2SH8Mm/logop.png' alt="logo"></img>
-                    <div class="hide"></div>
-                </Logo>
-            </Begin>
-            <Container>
-                <div className="first">
-                    <p className="title">Sobre</p>
-                    <p className="content">A Transmas Encomendas e Transportes presta serviços de transporte rodoviário de cargas com ênfase na prestação de transporte de carga fechada com excelência e pontualidade nas entregas e coletas.</p>
-                    <p className="content">Atua em toda a Região Norte e Litoral Norte de Santa Catarina e Região Sul do Paraná. Realiza também o transporte de cargas para os Estados de São Paulo e Rio Grande do Sul, e para todo o restante do Estado de Santa Catarina.</p>
-                </div>
-                <div className="divider">
-                    
-                </div>
-                <div>
-                    <p className="title">Mapa do Site</p>
-                    <p className="content">Início</p>
-                    <p className="content">Quem Somos</p>
-                    <p className="content">Coletas</p>
-                    <p className="content">Documentos</p>
-                    <p className="content">Contado</p>
-                    <p className="content">Rastreio</p>
-                </div>
-                <div>
-                    <p className="title">Siga a TransMas</p>
-                    <p className="content">Facebook</p>
-                    <p className="content">Instagram</p>
-                    <p className="content">Linkedin</p>
-                </div>
-            </Container>
-               
+        <Wrapper>
+            <Info>
+                <Begin>
+                    <Logo>
+                        <img src='https://i.ibb.co/h2SH8Mm/logop.png' alt="logo"></img>
+                        <div class="hide"></div>
+                    </Logo>
+                </Begin>
+                <Container>
+                    <div className="first">
+                        <p className="title">Sobre</p>
+                        <p className="content">A Transmas Encomendas e Transportes presta serviços de transporte rodoviário de cargas com ênfase na prestação de transporte de carga fechada com excelência e pontualidade nas entregas e coletas.</p>
+                        <p className="content">Atua em toda a Região Norte e Litoral Norte de Santa Catarina e Região Sul do Paraná. Realiza também o transporte de cargas para os Estados de São Paulo e Rio Grande do Sul, e para todo o restante do Estado de Santa Catarina.</p>
+                    </div>
+                    <div className="divider">
+                        
+                    </div>
+                    <div>
+                        <p className="title">Mapa do Site</p>
+                        <p className="content">Início</p>
+                        <p className="content">Quem Somos</p>
+                        <p className="content">Coletas</p>
+                        <p className="content">Documentos</p>
+                        <p className="content">Contado</p>
+                        <p className="content">Rastreio</p>
+                    </div>
+                    <div>
+                        <p className="title">Siga a TransMas</p>
+                        <p className="content">Facebook</p>
+                        <p className="content">Instagram</p>
+                        <p className="content">Linkedin</p>
+                    </div>
+                </Container>
+                
+            </Info>
+            <Base>
+                @ 2002-2022 • TransMas
+            </Base>
         </Wrapper>
-        <Base>
-            @ 2002-2022 • TransMas
-        </Base>
-        </>
     );
 }
-
 export const Wrapper = styled.section`
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+    background: #F7F8FC;
+`;
+
+export const Info = styled.section`
     display:flex;
     flex-direction: column;
     align-items:center;

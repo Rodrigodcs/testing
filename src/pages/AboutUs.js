@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { useState } from "react"
 
+const url = "http://localhost:3005"
+
 export default function AboutUs() {
     const [cnpj,setCnpj] = useState("")
     const [password,setPassword] = useState("")
@@ -15,7 +17,7 @@ export default function AboutUs() {
                         <input type="text" maxlength="14" name="cnpj" value={cnpj} onChange={(e)=>setCnpj(e.target.value)}></input>
                     </td>
                 </tr>
-                <tr> 
+                <tr>
                     <td>Senha:</td>
                     <td>
                         <input type="password" maxlength="8" name="senha" value={password} onChange={(e)=>setPassword(e.target.value)}></input>
@@ -29,7 +31,7 @@ export default function AboutUs() {
                     </td>
                 </tr>
             </table>
-            <input type="hidden" name="urlori" value="http://localhost:3005/sobre"></input>
+            <input type="hidden" name="urlori" value={`${url}/sobre`}></input>
         </form>
       </Wrapper>
     );

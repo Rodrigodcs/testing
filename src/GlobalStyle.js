@@ -8,5 +8,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-style: normal;
         font-weight: normal; 
+        a{
+            text-decoration: none;
+        }
     }
 `

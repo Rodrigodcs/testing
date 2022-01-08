@@ -1,8 +1,12 @@
 import styled from "styled-components"
+import {useState} from "react"
 
 export default function Contact() {
+  
+
     return (
       <Wrapper>
+          
             CONTATO
       </Wrapper>
     );
