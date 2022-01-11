@@ -8,7 +8,7 @@ const url = "http://localhost:3005"
 export default function Track() {
     const [cnpj,setCnpj] = useState("")
     const [password,setPassword] = useState("")
-    const [option, setOption] = useState(0)
+    const [option, setOption] = useState(<DestinatarioNF/>)
 
     console.log(option)
     return (
@@ -16,7 +16,7 @@ export default function Track() {
             <Info>
                 <div className="middle">
                     <div className="options-selector">
-                        <Button onClick={() => setOption(0)} className="button" variant="contained">
+                        <Button onClick={() => setOption(<DestinatarioNF/>)} className="button" variant="contained">
                             Rastreamennto online
                         </Button>
                         <Button onClick={() => setOption(1)} className="button" variant="contained">
@@ -35,7 +35,8 @@ export default function Track() {
                             Pagador com senha
                         </Button>
                     </div>
-                    {option===1?
+                    {option}
+                    {/* {option===1?
                         <DestinatarioNF/>:
                         <form name="form2" action="https://ssw.inf.br/2/ssw_resultSSW_rem" method="POST">
                         <table width="100%" border-radius="0" cellpadding="2" cellspacing="2">
@@ -61,7 +62,7 @@ export default function Track() {
                         </table>
                         <input type="hidden" name="urlori" value={`${url}/sobre`}></input>
                     </form>
-                        }
+                        } */}
                     
                 </div>
                 
@@ -72,11 +73,11 @@ export default function Track() {
 }
 
 export const Wrapper = styled.section`
+
     display:flex;
     flex-direction: column;
     align-items:center;
     width:100%;
-    background: red;
 `;
 
 const Info = styled.div`
@@ -86,21 +87,30 @@ const Info = styled.div`
     margin-top:60px;
     width:100%;
     height: calc(100vh - 60px);
-    background: green;
-    
+    background-image: url(https://wallpapercave.com/wp/wp2476281.jpg);  
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        
     .middle{
-        max-width:1000px;
+        max-width:800px;
+        border-radius:15px;
         background: lightgrey;
         display:flex;
+        padding-right:80px;
 
         .options-selector{
-            padding: 10px 10px;
+            border-top-left-radius:15px;
+            border-bottom-left-radius:15px;
+
+            padding: 30px 10px;
             width: 400px;
             background: grey;
             display:flex;
             flex-direction:column;
             align-items: center;
-            gap: 5px;
+            gap: 40px;
             .button{
                 background-color:#B63232;
                 color:white;

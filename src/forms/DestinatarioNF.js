@@ -49,6 +49,8 @@ export default function DestinatarioNF() {
 
 export const Wrapper = styled.section`
     margin-left:20px;
+    padding: 20px;
+    padding-top: 50px;
     width:100%;
     height:300px;
     display:flex;
