@@ -6,8 +6,8 @@ import DestinatarioNF from "../forms/DestinatarioNF";
 const url = "http://localhost:3005"
 
 export default function Track() {
-    const [cnpj,setCnpj] = useState("")
-    const [password,setPassword] = useState("")
+    // const [cnpj,setCnpj] = useState("")
+    // const [password,setPassword] = useState("")
     const [option, setOption] = useState(<DestinatarioNF/>)
 
     console.log(option)
@@ -40,7 +40,7 @@ export default function Track() {
                         <DestinatarioNF/>:
                         <form name="form2" action="https://ssw.inf.br/2/ssw_resultSSW_rem" method="POST">
                         <table width="100%" border-radius="0" cellpadding="2" cellspacing="2">
-                            <tr> 
+                            <tr>
                                 <td width="200">CNPJ do Remetente:</td>
                                 <td width="1136">
                                     <input type="text" maxlength="14" name="cnpj" value={cnpj} onChange={(e)=>setCnpj(e.target.value)}></input>
@@ -91,7 +91,7 @@ const Info = styled.div`
         
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;  
+        background-size: cover;
         
     .middle{
         max-width:800px;
