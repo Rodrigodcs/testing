@@ -9,7 +9,7 @@ export default function Footer() {
                 <Begin>
                     <Logo>
                         <img src='https://i.ibb.co/h2SH8Mm/logop.png' alt="logo"></img>
-                        <div class="hide"></div>
+                        <div className="hide"></div>
                     </Logo>
                 </Begin>
                 <Container>
